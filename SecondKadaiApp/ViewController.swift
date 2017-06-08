@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  SecondKadaiApp
 //
-//  Created by Rei Yamaguchi on 2017/06/09.
+//  Created by Rei Yamaguchi on 2017/06/09..
 //  Copyright © 2017年 rei.yamaguchi. All rights reserved.
 //
 
