@@ -12,6 +12,8 @@
 		33CA62551EEA56EA00819015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33CA62531EEA56EA00819015 /* Main.storyboard */; };
 		33CA62571EEA56EA00819015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33CA62561EEA56EA00819015 /* Assets.xcassets */; };
 		33CA625A1EEA56EA00819015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33CA62581EEA56EA00819015 /* LaunchScreen.storyboard */; };
+		33CA62621EEA613300819015 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CA62611EEA613300819015 /* FullScreenViewController.swift */; };
+		33CA62641EEA975E00819015 /* ONE-OK-ROCK.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 33CA62631EEA975E00819015 /* ONE-OK-ROCK.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		33CA62561EEA56EA00819015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33CA62591EEA56EA00819015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33CA625B1EEA56EA00819015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33CA62611EEA613300819015 /* FullScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
+		33CA62631EEA975E00819015 /* ONE-OK-ROCK.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ONE-OK-ROCK.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 		33CA624E1EEA56EA00819015 /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
+				33CA62631EEA975E00819015 /* ONE-OK-ROCK.mp3 */,
 				33CA624F1EEA56EA00819015 /* AppDelegate.swift */,
 				33CA62511EEA56EA00819015 /* ViewController.swift */,
+				33CA62611EEA613300819015 /* FullScreenViewController.swift */,
 				33CA62531EEA56EA00819015 /* Main.storyboard */,
 				33CA62561EEA56EA00819015 /* Assets.xcassets */,
 				33CA62581EEA56EA00819015 /* LaunchScreen.storyboard */,
@@ -124,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33CA62641EEA975E00819015 /* ONE-OK-ROCK.mp3 in Resources */,
 				33CA625A1EEA56EA00819015 /* LaunchScreen.storyboard in Resources */,
 				33CA62571EEA56EA00819015 /* Assets.xcassets in Resources */,
 				33CA62551EEA56EA00819015 /* Main.storyboard in Resources */,
@@ -139,6 +146,7 @@
 			files = (
 				33CA62521EEA56EA00819015 /* ViewController.swift in Sources */,
 				33CA62501EEA56EA00819015 /* AppDelegate.swift in Sources */,
+				33CA62621EEA613300819015 /* FullScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
