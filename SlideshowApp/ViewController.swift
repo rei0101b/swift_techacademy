@@ -38,7 +38,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let fullScreenViewController: FullScreenViewController = segue.destination as! FullScreenViewController
-        fullScreenViewController.timeCountFromMain = timeCount - 1
+        fullScreenViewController.timeCountFromMain = timeCount
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -85,8 +85,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     func slideImage() {
         if timeCount <= 50 {
-            image.setImage(IMG[timeCount], for: UIControlState())
             timeCount += 1
+            image.setImage(IMG[timeCount], for: UIControlState())
             return
         }
         timeCount = 0
