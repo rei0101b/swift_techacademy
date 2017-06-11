@@ -19,13 +19,14 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     var IMG:[UIImage] = []
     var timeCount = 0
     var audioPlayer: AVAudioPlayer!
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // 写真の保存
-        for i in 1966...2017 {
-            let imgName: String = "IMG_" + String(i)
+        for i in 1...8 {
+            let imgName: String = "img_" + String(i)
             print(imgName)
             IMG.append(UIImage(named: imgName)!)
         }
@@ -38,7 +39,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let fullScreenViewController: FullScreenViewController = segue.destination as! FullScreenViewController
-        fullScreenViewController.timeCountFromMain = timeCount - 1
+        fullScreenViewController.timeCountFromMain = timeCount
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -62,7 +64,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         // timerを止める
         playStopFlag = true
         changePlayStop()
-        if timeCount <= 50 {
+        if timeCount <= 6 {
             timeCount += 1
             image.setImage(IMG[timeCount], for: UIControlState())
             return
@@ -74,19 +76,19 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         // timerを止める
         playStopFlag = true
         changePlayStop()
-        if 0 < timeCount && timeCount <= 50 {
+        if 0 < timeCount && timeCount <= 7 {
             timeCount -= 1
             image.setImage(IMG[timeCount], for: UIControlState())
             return
         }
-        timeCount = 50
+        timeCount = 7
         image.setImage(IMG[timeCount], for: UIControlState())
     }
     
     func slideImage() {
-        if timeCount <= 50 {
-            image.setImage(IMG[timeCount], for: UIControlState())
+        if timeCount <= 7 {
             timeCount += 1
+            image.setImage(IMG[timeCount], for: UIControlState())
             return
         }
         timeCount = 0
@@ -114,7 +116,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     }
     
     func lanchTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(slideImage), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(slideImage), userInfo: nil, repeats: true)
     }
     
     func prepareMusic() {

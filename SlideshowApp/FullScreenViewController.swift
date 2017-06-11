@@ -17,8 +17,8 @@ class FullScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // 写真の保存
-        for i in 1966...2017 {
-            let imgName: String = "IMG_" + String(i)
+        for i in 1...8 {
+            let imgName: String = "img_" + String(i)
             print(imgName)
             IMG.append(UIImage(named: imgName)!)
         }

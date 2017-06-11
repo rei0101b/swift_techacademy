@@ -310,6 +310,7 @@
 				33CA62601EEA56EA00819015 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
