@@ -34,6 +34,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         if segue.identifier == "cellSegue" {
             let indexPath = self.tableView.indexPathForSelectedRow
             inputViewController.task = taskArray[indexPath!.row]
+            return
         }
         let task = Task()
         task.date = Date()
