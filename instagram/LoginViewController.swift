@@ -19,7 +19,24 @@ class LoginViewController: UIViewController {
     
     //　ログインボタンをタップしたときに呼ばれるメソッド
     @IBAction func handleLoginButton(_ sender: Any) {
-        
+        if let address = mailAddressTextField.text, let password = passwordTextField.text {
+            // アドレスｔおパスワード名のいずれかでも入力されていないときはなにもしない
+            if address.characters.isEmpty || password.characters.isEmpty {
+                return
+            }
+            
+            FIRAuth.auth()?.signIn(withEmail: address, password: password) { user, error in
+                if let error = error {
+                    print("DEBUG_PRINT: " + error.localizedDescription)
+                    return
+                } else {
+                    print("DEBUG_PRINT: ログインに成功しました")
+                    
+                    //　画面を閉じてViewControllerに戻る
+                    self.dismiss(animated: true, completion: nil)
+                }
+            }
+        }
     }
     
     // アカウント作成ボタンをタップしたときに呼ばれるメソッド
