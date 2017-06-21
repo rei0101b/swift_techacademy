@@ -10,4 +10,5 @@ pod 'ESTabBarController'
 pod 'Firebase', '3.17.0'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
+pod 'SVProgressHUD'
 end

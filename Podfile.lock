@@ -36,12 +36,14 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.10)
+  - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
   - ESTabBarController
   - Firebase (= 3.17.0)
   - Firebase/Auth
   - Firebase/Database
+  - SVProgressHUD
 
 SPEC CHECKSUMS:
   ESTabBarController: f08fa16b154cfb9d8d42096f7d6d10b58775dbf5
@@ -53,7 +55,8 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 52036bc3300faa404042026bf148590e780c62bf
+PODFILE CHECKSUM: fa5a5c525d698b6c030fa1dae71e8374e691ca9e
 
 COCOAPODS: 1.2.1
